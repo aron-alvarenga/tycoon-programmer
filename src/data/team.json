@@ -1,0 +1,15 @@
+{
+  "archetypes": [
+    { "id": "intern", "label": "Estagiário (otimismo não-calibrado)" },
+    { "id": "mid", "label": "Pleno (já viu coisa)" },
+    { "id": "senior", "label": "Sênior (viu coisa demais)" },
+    { "id": "specialist", "label": "Especialista (só fala de um assunto)" },
+    { "id": "unmotivated", "label": "Desmotivado (câmera sempre off)" }
+  ],
+  "traits": [
+    { "id": "perfectionist", "label": "Perfeccionista" },
+    { "id": "rushed", "label": "Apressado" },
+    { "id": "lone_wolf", "label": "Lobo solitário" },
+    { "id": "mentor", "label": "Mentor" }
+  ]
+}

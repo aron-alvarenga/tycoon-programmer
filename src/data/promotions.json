@@ -1,0 +1,8 @@
+[
+  { "levelId": "intern", "title": "Estagiário", "focus": "Sobreviver ao legado", "order": 0, "requirements": { "code": 25 } },
+  { "levelId": "junior", "title": "Júnior", "focus": "Entregar sem quebrar", "order": 1, "requirements": { "code": 40, "infra": 20 } },
+  { "levelId": "mid", "title": "Pleno", "focus": "Autonomia, deploy e plantão", "order": 2, "requirements": { "code": 60, "infra": 40, "architecture": 25 } },
+  { "levelId": "senior", "title": "Sênior", "focus": "Mentoria e code review", "order": 3, "requirements": { "architecture": 45, "softSkills": 50 } },
+  { "levelId": "tech_lead", "title": "Tech Lead", "focus": "Sprint, time e negócio", "order": 4, "requirements": { "architecture": 70, "softSkills": 60 } },
+  { "levelId": "architect", "title": "Arquiteto", "focus": "Migrar o legado sem incendiar a empresa", "order": 5, "requirements": {} }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "id": "prod_down",
+    "title": "Produção caiu",
+    "text": "O monitoramento ficou vermelho e a conversa do time ficou em silêncio. O cliente não conhece o conceito de problema temporário.",
+    "tags": [
+      "prod",
+      "incidente"
+    ],
+    "minLevelId": "intern",
+    "choices": [
+      {
+        "id": "read_logs",
+        "label": "Investigar os logs",
+        "effects": {
+          "energy": -10,
+          "prodBugs": -2,
+          "stress": -4
+        }
+      },
+      {
+        "id": "restart_and_pray",
+        "label": "Reiniciar e rezar",
+        "effects": {
+          "prodBugs": -1,
+          "techDebt": 6,
+          "stress": 4
+        }
+      },
+      {
+        "id": "blame_cache",
+        "label": "Deixar para depois",
+        "effects": {
+          "stress": 6,
+          "techDebt": 4
+        }
+      }
+    ],
+    "cooldownDays": 8
+  },
+  {
+    "id": "just_a_tiny_thing",
+    "title": "A PO quer só uma coisinha",
+    "text": "A PO trouxe uma mudança rápida. A estimativa é cinco minutos; a história do código discorda.",
+    "tags": [
+      "po",
+      "escopo"
+    ],
+    "minLevelId": "intern",
+    "choices": [
+      {
+        "id": "do_it_now",
+        "label": "Fazer agora",
+        "effects": {
+          "energy": -12,
+          "stress": 8,
+          "techDebt": -4
+        }
+      },
+      {
+        "id": "open_task",
+        "label": "Planejar para a próxima versão",
+        "effects": {
+          "stress": 2,
+          "techDebt": -2
+        }
+      },
+      {
+        "id": "say_no",
+        "label": "Dizer não (com educação)",
+        "effects": {
+          "po": -5,
+          "stress": -6,
+          "integrity": 4
+        }
+      }
+    ],
+    "cooldownDays": 8
+  },
+  {
+    "id": "friday_deploy",
+    "title": "Deploy no fim do expediente",
+    "text": "O pipeline está verde e o time já pensa em ir embora. Publicar agora ou preservar a noite de todo mundo?",
+    "tags": [
+      "deploy",
+      "risco"
+    ],
+    "minLevelId": "junior",
+    "choices": [
+      {
+        "id": "deploy",
+        "label": "Deployar",
+        "effects": {
+          "energy": -8,
+          "po": 5,
+          "prodBugs": 1
+        }
+      },
+      {
+        "id": "postpone",
+        "label": "Adiar pra segunda",
+        "effects": {
+          "po": -4,
+          "stress": -5,
+          "team": 3
+        }
+      },
+      {
+        "id": "deploy_and_vanish",
+        "label": "Deployar e desligar o celular",
+        "effects": {
+          "po": 6,
+          "prodBugs": 2,
+          "integrity": -8
+        }
+      }
+    ],
+    "cooldownDays": 8
+  },
+  {
+    "id": "meeting_email",
+    "title": "Uma reunião que poderia ser e-mail",
+    "text": "Mais uma hora de agenda. Nenhuma linha da pauta explica por que você precisa estar lá.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "intern",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "join",
+        "label": "Participar e criar contexto",
+        "effects": {
+          "energy": -8,
+          "team": 3,
+          "stress": 3
+        }
+      },
+      {
+        "id": "propose_async",
+        "label": "Propor um resumo assíncrono",
+        "effects": {
+          "boss": 2,
+          "team": 1,
+          "stress": -3
+        }
+      },
+      {
+        "id": "ghost",
+        "label": "Sumir sem avisar",
+        "effects": {
+          "energy": 6,
+          "boss": -5,
+          "team": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_docs",
+    "title": "A documentação é a pessoa",
+    "text": "Você pediu um link. O time apontou para o dev que entra de férias amanhã.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "intern",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "write_docs",
+        "label": "Documentar enquanto aprende",
+        "effects": {
+          "energy": -10,
+          "techDebt": -6,
+          "team": 4
+        }
+      },
+      {
+        "id": "ask_context",
+        "label": "Pedir uma sessão de contexto",
+        "effects": {
+          "energy": -5,
+          "team": -2,
+          "stress": -3
+        }
+      },
+      {
+        "id": "guess",
+        "label": "Adivinhar e seguir",
+        "effects": {
+          "techDebt": 6,
+          "po": 3,
+          "stress": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "review_huge",
+    "title": "Code review de 2.000 linhas",
+    "text": "O título do PR é ajuste simples. O diff tem uma tese de doutorado.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "junior",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "review",
+        "label": "Revisar com atenção",
+        "effects": {
+          "energy": -12,
+          "techDebt": -5,
+          "team": 3
+        }
+      },
+      {
+        "id": "split",
+        "label": "Pedir para dividir o PR",
+        "effects": {
+          "po": -3,
+          "team": 3,
+          "stress": -2
+        }
+      },
+      {
+        "id": "lgtm",
+        "label": "Aprovar porque está verde",
+        "effects": {
+          "techDebt": 7,
+          "prodBugs": 1,
+          "po": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "cloud_invoice",
+    "title": "A cloud descobriu seu cartão",
+    "text": "A fatura cresceu. O tráfego não. Alguém chamou isso de capacidade para o futuro.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "mid",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "audit",
+        "label": "Investigar recursos esquecidos",
+        "effects": {
+          "energy": -12,
+          "techDebt": -5,
+          "boss": 4
+        }
+      },
+      {
+        "id": "raise_alarm",
+        "label": "Negociar tempo para uma auditoria",
+        "effects": {
+          "po": -4,
+          "team": 3,
+          "boss": 2
+        }
+      },
+      {
+        "id": "ignore",
+        "label": "Deixar para o próximo ciclo",
+        "effects": {
+          "boss": -6,
+          "stress": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "mentor",
+    "title": "O júnior pediu ajuda",
+    "text": "Você conhece esse olhar. Era o seu, algumas promoções atrás.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "senior",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "teach",
+        "label": "Ensinar o raciocínio",
+        "effects": {
+          "energy": -10,
+          "team": 6,
+          "integrity": 3
+        }
+      },
+      {
+        "id": "solve",
+        "label": "Resolver por ele e seguir",
+        "effects": {
+          "energy": -6,
+          "po": 4,
+          "team": -2
+        }
+      },
+      {
+        "id": "send_link",
+        "label": "Mandar um link sem contexto",
+        "effects": {
+          "team": -5,
+          "stress": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "team_conflict",
+    "title": "Dois padrões, nenhuma paz",
+    "text": "O time discute estilo de código há quarenta minutos. O cliente continua esperando a feature.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "tech_lead",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "mediate",
+        "label": "Mediar e combinar um padrão",
+        "effects": {
+          "energy": -10,
+          "team": 5,
+          "techDebt": -4
+        }
+      },
+      {
+        "id": "impose",
+        "label": "Impor uma decisão e encerrar",
+        "effects": {
+          "boss": 3,
+          "team": -5,
+          "stress": 3
+        }
+      },
+      {
+        "id": "ignore_conflict",
+        "label": "Ignorar até alguém ceder",
+        "effects": {
+          "team": -6,
+          "techDebt": 4,
+          "stress": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "investor_demo",
+    "title": "A demo para a diretoria",
+    "text": "A apresentação tem dez slides de crescimento e um ambiente que você não confia em abrir.",
+    "tags": [
+      "carreira"
+    ],
+    "minLevelId": "tech_lead",
+    "cooldownDays": 10,
+    "choices": [
+      {
+        "id": "honest",
+        "label": "Mostrar limites e um plano realista",
+        "effects": {
+          "po": -3,
+          "boss": 3,
+          "integrity": 5
+        }
+      },
+      {
+        "id": "fake",
+        "label": "Simular tudo e vender certeza",
+        "effects": {
+          "boss": 6,
+          "integrity": -10,
+          "techDebt": 5
+        }
+      },
+      {
+        "id": "postpone",
+        "label": "Pedir tempo para estabilizar",
+        "effects": {
+          "boss": -4,
+          "team": 4,
+          "prodBugs": -1
+        }
+      }
+    ]
+  }
+]

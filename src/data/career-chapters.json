@@ -1,0 +1,8 @@
+﻿[
+  {"levelId":"intern","chapter":"O primeiro crachá","scene":"Sua primeira mesa","mission":"Conquiste confiança sem fingir que já sabe tudo.","unlock":"Tasks, estudo e mentoria","description":"Aprenda o código, pergunte e entregue suas primeiras tarefas."},
+  {"levelId":"junior","chapter":"Além do funciona aqui","scene":"Seu espaço no time","mission":"Entregue com consistência e aprenda a colocar código em produção.","unlock":"Autonomia técnica","description":"Código e infraestrutura passam a andar juntos. O deploy também é seu."},
+  {"levelId":"mid","chapter":"Autonomia tem plantão","scene":"Estação de desenvolvimento","mission":"Resolva problemas inteiros, incluindo o dia seguinte ao deploy.","unlock":"System Design","description":"A complexidade cresce. Antecipe incidentes e aprenda arquitetura."},
+  {"levelId":"senior","chapter":"Seu impacto multiplica","scene":"Referência do time","mission":"Faça o time evoluir junto com o código.","unlock":"Mentoria e reputação","description":"Entregar sozinho já não basta: arquitetura e comunicação abrem a próxima porta."},
+  {"levelId":"tech_lead","chapter":"Você não é mais a capacidade","scene":"Mesa de liderança","mission":"Planeje a sprint, proteja o time e negocie o que cabe.","unlock":"Equipe autônoma e planejamento","description":"Uma ação de liderança por dia. O time executa o plano enquanto você decide prioridades."},
+  {"levelId":"architect","chapter":"Decisões que ficam","scene":"Sala de arquitetura","mission":"Sustente duas sprints de operação e escolha o legado que vai deixar.","unlock":"Prova final e relatório","description":"O cargo é o começo da prova. O estado da empresa e suas decisões determinam seu final."}
+]

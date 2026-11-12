@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fix_the_thing",
+    "title": "Arrumar o negócio (a descrição é essa mesmo)",
+    "skill": "code",
+    "baseDifficulty": 2
+  },
+  {
+    "id": "bakery_report",
+    "title": "Corrigir o botão que só falha na demo",
+    "skill": "code",
+    "baseDifficulty": 1
+  },
+  {
+    "id": "slow_query",
+    "title": "A query que virou um teste de paciência",
+    "skill": "infra",
+    "baseDifficulty": 3
+  },
+  {
+    "id": "docker_works_here",
+    "title": "Containerizar o funciona na minha máquina",
+    "skill": "infra",
+    "baseDifficulty": 2
+  },
+  {
+    "id": "document_legacy",
+    "title": "Documentar o que só uma pessoa sabe",
+    "skill": "softSkills",
+    "baseDifficulty": 2
+  },
+  {
+    "id": "split_god_class",
+    "title": "Dividir a classe que tem mais linhas que o produto",
+    "skill": "architecture",
+    "baseDifficulty": 4
+  },
+  {
+    "id": "api_contract",
+    "title": "Criar a API que a PO já prometeu ao cliente",
+    "skill": "code",
+    "baseDifficulty": 2
+  },
+  {
+    "id": "flaky_tests",
+    "title": "Descobrir por que o CI passa quando quer",
+    "skill": "code",
+    "baseDifficulty": 2
+  },
+  {
+    "id": "cloud_cleanup",
+    "title": "Desligar o servidor que ninguém lembra de ter criado",
+    "skill": "infra",
+    "baseDifficulty": 3
+  },
+  {
+    "id": "onboarding",
+    "title": "Ajudar o próximo dev a sobreviver ao primeiro dia",
+    "skill": "softSkills",
+    "baseDifficulty": 2
+  },
+  {
+    "id": "migration_plan",
+    "title": "Migrar o módulo sem migrar os bugs junto",
+    "skill": "architecture",
+    "baseDifficulty": 4
+  },
+  {
+    "id": "rollback",
+    "title": "Escrever o rollback antes de precisar dele",
+    "skill": "infra",
+    "baseDifficulty": 3
+  }
+]
